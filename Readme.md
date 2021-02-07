@@ -17,3 +17,22 @@
     BO.WriteLog(std::to_string(i),l);
   }
 ```
+#### 字符串匹配算法
+> BF算法 (Brute Force)  
+> KMP算法  
+> [StringMatch.h]
+> using example  
+```c++
+  std::string target = "dajksdaj";
+  std::string pattern = "aj";
+  std::vector<std::string> diss{"mathResult","infolder/data"};
+  std::string basename = "../data/";
+  IO::OutBase* outBase = new IO::OutBase(1,diss,basename);
+  Algorithms::StringMatch::BFAlgorithm BO(outBase);
+  BO.setLevelDiscription(diss);
+  BO(target,pattern);
+  std::vector<std::string> nextdiss{"nexttest","KMP"};
+  IO::OutBase* outBaseNext = new IO::OutBase(2,nextdiss,basename);
+  Algorithms::StringMatch::KMPAlgorithm KMP(outBaseNext);
+  KMP(target,pattern);
+```
