@@ -54,3 +54,30 @@
   ufi.setUnionFind(10);// 初始化0-9
   ufi.PrintOut(std::cout);
 ```
+
+#### BaseSort
+> [BaseSort.h]  
+> Bubble Sort  
+> Select Sort  
+> Quik Sort  
+```c++
+  std::vector<int> array{1,5,3,8,6,9};
+  Algorithms::BaseSort::BubbleSort bs;
+  auto res = bs(array);
+  for (int it:res){
+    std::cout << it << " ";
+  }
+  std::cout << std::endl;
+  Algorithms::BaseSort::SelectSort ss;
+  auto res1 = ss(array);
+  for (int it:res1){
+    std::cout << it << " ";
+  }
+  std::cout << std::endl;
+  Algorithms::BaseSort::QuikSort qs;
+  auto res2 = qs(array);
+  for (int it:res2){
+    std::cout << it << " ";
+  }
+  std::cout << std::endl;
+```
