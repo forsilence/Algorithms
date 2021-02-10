@@ -1,5 +1,5 @@
-# if !defined(_BFALGORITHM_H)
-# define _BFALGORITHM_H
+# if !defined(_STRING_MATCH_FORSILENCE_H)
+# define _STRING_MATCH_FORSILENCE_H
 # include"BaseOperation.h"
 namespace Algorithms{
 namespace StringMatch{

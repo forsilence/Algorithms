@@ -36,3 +36,18 @@
   Algorithms::StringMatch::KMPAlgorithm KMP(outBaseNext);
   KMP(target,pattern);
 ```
+#### 并查集
+> [UnionFind.h]  
+```c++
+  std::vector<int> inner{0,1,2,3,4,5,6};
+  Algorithms::UnionFind::UnionFindInt ufi(inner);
+  ufi.unionOperation(0,1);
+  ufi.unionOperation(2,3);
+  ufi.PrintOut(std::cout);
+  std::cout << "*****************" << std::endl;
+  ufi.unionOperation(4,3);
+  ufi.PrintOut(std::cout);
+  std::cout << "*****************" << std::endl;
+  ufi.unionOperation(5,4);
+  ufi.PrintOut(std::cout);
+```
