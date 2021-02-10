@@ -22,10 +22,14 @@ bool UnionFindInt::findingFailed(int v){
 }
 
 void UnionFindInt::unionOperation( int a, int b){
-  if (!isRoot(b)){
-    alterToRoot(b);
+  if (find(a) == find(b)){
+    return ;
+  }else{
+    if (!isRoot(b)){
+      alterToRoot(b);
+    }
+    innerArray[b] = a;
   }
-  innerArray[b] = a;
 }
 
 void UnionFindInt::alterToRoot( int v){
