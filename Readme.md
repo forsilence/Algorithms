@@ -50,4 +50,7 @@
   std::cout << "*****************" << std::endl;
   ufi.unionOperation(5,4);
   ufi.PrintOut(std::cout);
+  std::cout << "*****************" << std::endl;
+  ufi.setUnionFind(10);// 初始化0-9
+  ufi.PrintOut(std::cout);
 ```

@@ -54,5 +54,12 @@ std::ostream& UnionFindInt::PrintOut(std::ostream& Print){
 bool UnionFindInt::isRoot( int v){
   return innerArray[v] == v;
 }
+
+void UnionFindInt::setUnionFind(std::size_t size_){
+  innerArray.clear();
+  for (int i=0; i< size_; ++i){
+    innerArray.push_back(i);
+  }
+}
 } // UnionFind
 } // Algorithms

@@ -7,8 +7,10 @@ namespace Algorithms{
 namespace UnionFind{
 class UnionFindInt: public Base::BaseOperator{
   public:
+  UnionFindInt(): innerArray(),Base::BaseOperator(){}
   UnionFindInt( std::vector<int> UnionFindArray):innerArray(UnionFindArray),Base::BaseOperator(){}
   UnionFindInt( std::vector<int> UnionFindArray, IO::OutBase* OutOperation): innerArray(UnionFindArray),Base::BaseOperator(OutOperation){}
+  void setUnionFind(std::size_t size_);
   int find(int v);
   void unionOperation( int a , int b);
   bool isSame(int a, int b);
